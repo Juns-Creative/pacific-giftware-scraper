@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pacific Giftware Results - Download</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .download-section { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .download-btn { background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px; display: inline-block; }
+        .download-btn:hover { background: #45a049; }
+        .file-info { background: white; padding: 15px; margin: 10px 0; border-left: 4px solid #2196F3; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Pacific Giftware Scraping Results</h1>
+    
+    <div class="download-section">
+        <h2>📊 Your Result Files</h2>
+        <p>Click the links below to download your files:</p>
+        
+        <div class="file-info">
+            <h3>Original 3 Items (12238, 11358, 11982)</h3>
+            <a href="Pacific_Giftware_Results.csv" class="download-btn" download>📄 Download CSV</a>
+            <a href="Pacific_Giftware_Results.xlsx" class="download-btn" download>📊 Download Excel</a>
+        </div>
+        
+        <div class="file-info">
+            <h3>New Test Items (Y7282, Y7750, 8791)</h3>
+            <a href="New_Test_Items_Results.csv" class="download-btn" download>📄 Download CSV</a>
+            <a href="New_Test_Items_Results.xlsx" class="download-btn" download>📊 Download Excel</a>
+        </div>
+        
+        <div class="file-info">
+            <h3>Complete Sample (All 6 Items)</h3>
+            <a href="sample_results_20250809_055604.csv" class="download-btn" download>📄 Download CSV</a>
+            <a href="sample_results_20250809_055604.xlsx" class="download-btn" download>📊 Download Excel</a>
+        </div>
+    </div>
+    
+    <div class="download-section">
+        <h2>📋 Data Preview</h2>
+        
+        <h3>Original Items Results:</h3>
+        <table>
+            <tr><th>Item Number</th><th>Product Name</th><th>Unit Price</th><th>Case Quantity</th></tr>
+            <tr><td>12238</td><td>CAT URN C/12</td><td>$15.00</td><td>12</td></tr>
+            <tr><td>11358</td><td>HECATE C/6</td><td>$16.75</td><td>6</td></tr>
+            <tr><td>11982</td><td>RX BOTTLES S & P C/48 MINIMUM OF 4</td><td>$6.75</td><td>48</td></tr>
+        </table>
+        
+        <h3>New Test Items Results:</h3>
+        <table>
+            <tr><th>Item Number</th><th>Product Name</th><th>Unit Price</th><th>Case Quantity</th></tr>
+            <tr><td>Y7282</td><td>GREEN & GOLD SCARAB, C/36</td><td>$6.50</td><td>36</td></tr>
+            <tr><td>Y7750</td><td>SMALL GOLD SKULL, C/36</td><td>$5.50</td><td>36</td></tr>
+            <tr><td>8791</td><td>BASSET HOUND S & P C/48 MINIMUM OF 4</td><td>$6.75</td><td>48</td></tr>
+        </table>
+    </div>
+    
+    <div class="download-section">
+        <h2>🔄 For Future Use</h2>
+        <p><strong>To scrape new items:</strong></p>
+        <ol>
+            <li>Upload your items CSV file to this workspace</li>
+            <li>Run: <code>python quick_run.py your_items.csv</code></li>
+            <li>Download results from this page</li>
+        </ol>
+    </div>
+</body>
+</html>
